@@ -5,9 +5,7 @@ const inquirer = require(`inquirer`);
 const questions = [`What is the title of your application?`, ``];
 
 // TODO: Create a function to write README file
-fs.writeFile(`newREADME.md`, `Example content`, function(err){
-    if (err) throw err;
-});
+
  inquirer.prompt([
      {
     name: 'title',
@@ -15,8 +13,11 @@ fs.writeFile(`newREADME.md`, `Example content`, function(err){
     type: 'input'
        }])
       .then(function(answer){
-       console.log(answer);
-      });
+    answer1 = answer.title;
+      }).then(function(){
+      fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>`, function(err){
+        if (err) throw err;
+    });});
 // TODO: Create a function to initialize app
 function init() {}
 
