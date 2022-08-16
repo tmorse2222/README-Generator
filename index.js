@@ -4,7 +4,7 @@ const fs = require(`fs`);
 const questions = [];
 
 // TODO: Create a function to write README file
-fs.writeFile(`README.md`, `Example content`, function(err){
+fs.writeFile(`newREADME.md`, `Example content`, function(err){
     if (err) throw err;
     console.log(`README created`);
 });
