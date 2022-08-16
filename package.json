@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tmorse2222/README-Generator/issues"
   },
-  "homepage": "https://github.com/tmorse2222/README-Generator#readme"
+  "homepage": "https://github.com/tmorse2222/README-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
 }
