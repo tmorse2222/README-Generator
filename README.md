@@ -1,1 +1,1 @@
-# README-Generator
+Example content
