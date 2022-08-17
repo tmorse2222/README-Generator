@@ -1,4 +1,4 @@
-<h1>Sample title</h1><br>
+<h1>Sample Title</h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
@@ -8,12 +8,15 @@
       <a href="#license">License Info</a><br>
       <a href="#questions">Questions</a><br>
       <h2>Description:</h2><br>
-      Sample description<br>
+      Sample Description<br>
       <h2>Installation:</h2><br>
-      sample requirements<br>
+      Sample Requirments<br>
       <h2>Usage:</h2><br>
-      sample instructions<br>
+      Sample Instructions<br>
       <h2>Contributions:</h2><br>
-      sample instructions<br>
+      Sample Instructions<br>
       <h2>Tests:</h2><br>
-      sample tests<br>
+      Sample tests<br>
+      <h2>Questions:</h2><br>
+      GitHub profile: <a href="https://github.com/tmorse2222">tmorse2222</a><br>
+      
