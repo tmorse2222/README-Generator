@@ -1,5 +1,5 @@
 <h1></h1><br>
-      [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen)]<br>
+      <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen"><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
