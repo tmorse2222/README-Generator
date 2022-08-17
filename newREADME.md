@@ -1,4 +1,4 @@
-<h1>Sample Title</h1><br>
+<h1>Sample title</h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
@@ -10,8 +10,10 @@
       <h2>Description:</h2><br>
       Sample description<br>
       <h2>Installation:</h2><br>
-      Sample requirements<br>
+      sample requirements<br>
       <h2>Usage:</h2><br>
-      Sample instructions<br>
+      sample instructions<br>
       <h2>Contributions:</h2><br>
-      Sample instructions<br>
+      sample instructions<br>
+      <h2>Tests:</h2><br>
+      sample tests<br>
