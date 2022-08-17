@@ -1,6 +1,6 @@
 <h1></h1><br>
+      [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)<br>
       <h2>Table of Contents:</h2><br>
-      <img href="https://img.shields.io/badge/License-Apache_2.0-blue.svg"><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
       <a href="#usage">Usage Instructions</a><br>
@@ -19,7 +19,7 @@
       <h2>Tests:</h2><br>
       <br>
       <h2>License:</h2><br>
-      This application is licensed with Apache.<br>
+      This application is licensed with MIT.<br>
       <h2>Questions:</h2><br>
       GitHub profile: <a href="https://github.com/"></a><br>
       Email me at <br>
