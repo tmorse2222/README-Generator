@@ -1,8 +1,5 @@
-<h1></h1><br>
+<h1>Sample</h1><br>
       <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen"><br>
-      <img src="https://img.shields.io/badge/License-MIT-yellow"><br>
-      <img src="https://img.shields.io/badge/License-IPL%201.0-blue"><br>
-      <img src="https://img.shields.io/badge/License-BSD%203--Clause-orange"><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
@@ -12,18 +9,18 @@
       <a href="#license">License Info</a><br>
       <a href="#questions">Questions</a><br>
       <h2>Description:</h2><br>
-      <br>
+      Sample<br>
       <h2>Installation:</h2><br>
-      <br>
+      Sample<br>
       <h2>Usage:</h2><br>
-      <br>
+      Sample<br>
       <h2>Contributions:</h2><br>
-      <br>
+      Sample<br>
       <h2>Tests:</h2><br>
-      <br>
+      Sample<br>
       <h2>License:</h2><br>
-      This application is licensed with MIT.<br>
+      This application is licensed with Apache.<br>
       <h2>Questions:</h2><br>
-      GitHub profile: <a href="https://github.com/"></a><br>
-      Email me at <br>
+      GitHub profile: <a href="https://github.com/Smple">Smple</a><br>
+      Email me at Sample<br>
       

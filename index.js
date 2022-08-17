@@ -65,12 +65,19 @@ const questions = [`What is the title of your application?`, `Please provide a d
     answer7 = answer.username;
     answer8 = answer.email;
     answer9 = answer.license;
+    link = ``;
+    if (answer.license == `MIT`) {
+        link = `https://img.shields.io/badge/License-MIT-yellow`
+    } else if (answer.license == `IBM`) {
+        link = `https://img.shields.io/badge/License-IPL%201.0-blue`
+    } else if (answer.license == `Apache`) {
+        link = `https://img.shields.io/badge/License-Apache%202.0-yellowgreen`
+    } else if (answer.license == `BSD 3`) {
+        link = `https://img.shields.io/badge/License-BSD%203--Clause-orange`
+    };
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
-      <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen"><br>
-      <img src="https://img.shields.io/badge/License-MIT-yellow"><br>
-      <img src="https://img.shields.io/badge/License-IPL%201.0-blue"><br>
-      <img src="https://img.shields.io/badge/License-BSD%203--Clause-orange"><br>
+      <img src="${link}"><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
