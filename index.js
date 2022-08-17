@@ -110,8 +110,3 @@ const questions = [`What is the title of your application?`, `Please provide a d
     });}).then(function(){
 console.log(`Readme created and saved under newREADME.md`)
     });
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();

@@ -27,4 +27,4 @@ THEN I am taken to the corresponding section of the README<br>
 <br>
 Description:<br>
 This application is executed through node.js, including the "fs" and "inquirer v-8.0.0" packages for functionality. Once initiated, A series of prompts appear through the terminal requiring information to be passed to the new README file. Once complete, a new README file for any application will be generated!
-A link to a video demo of the application can be found<a href="https://tmorse2222.github.io/Tyler-M.-Portfolio/">here</a>
+A link to a video demo of the application can be found <a href="https://tmorse2222.github.io/Tyler-M.-Portfolio/">here</a>
