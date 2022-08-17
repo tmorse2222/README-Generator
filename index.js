@@ -68,7 +68,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
       <h2>Table of Contents:</h2><br>
-      [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)<br>
+      [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]<br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
       <a href="#usage">Usage Instructions</a><br>
