@@ -4,44 +4,49 @@ const inquirer = require(`inquirer`);
 // TODO: Create an array of questions for user input
 const questions = [`What is the title of your application?`, `Please provide a description of your application`, `Please provide any installation requirements`,
 `How should this app be operated?`, `How would one contribute to this repository/code base?`, `What tests were performed on the app?`, 
-`Please enter your GitHub username`];
+`Please enter your GitHub username`, `Please enter your email`];
 
 // TODO: Create a function to write README file
 
  inquirer.prompt([
      {
     name: 'title',
-    message: `${questions[0]}`,
+    message: questions[0],
     type: 'input'
        },
        {
            name: `description`,
-           message: `${questions[1]}`,
+           message: questions[1],
            type: `input`
        },
     {
         name: `installation`,
-        message: `${questions[2]}`,
+        message: questions[2],
         type: `input`
     },
     {
         name: `usage`,
-        message: `${questions[3]}`,
+        message: questions[3],
         type: `input`
     },
     {
         name: `contribute`,
-        message: `${questions[4]}`,
+        message: questions[4],
         type: `input`
     },
     {
         name: `tests`,
-        message: `${questions[5]}`,
+        message: questions[5],
         type: `input`
     },
     {
         name: `username`,
-        message: `${questions[6]}`,
+        message: questions[6],
+        type: `input`
+    },
+    {
+        name: `email`,
+        message: questions[7],
         type: `input`
     }])
       .then(function(answer){
@@ -52,6 +57,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
     answer5 = answer.contribute;
     answer6 = answer.tests;
     answer7 = answer.username;
+    answer8 = answer.email;
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
       <h2>Table of Contents:</h2><br>
@@ -74,6 +80,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
       ${answer6}<br>
       <h2>Questions:</h2><br>
       GitHub profile: <a href="https://github.com/${answer7}">${answer7}</a><br>
+      Email me at ${answer8}<br>
       `, function(err){
         if (err) throw err;
     });});
