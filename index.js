@@ -5,9 +5,7 @@ const inquirer = require(`inquirer`);
 const questions = [`What is the title of your application?`, `Please provide a description of your application`, `Please provide any installation requirements`,
 `How should this app be operated?`, `How would one contribute to this repository/code base?`, `What tests were performed on the app?`, 
 `Please enter your GitHub username`, `Please enter your email`, `Which license would you like to apply to the application?`];
-
-// TODO: Create a function to write README file
-
+// Function to ask user details 
  inquirer.prompt([
      {
     name: 'title',
@@ -55,6 +53,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
         type: `list`,
         choices: [`MIT`, `IBM`, `Apache`, `BSD 3`]
     }])
+    // Function to assign data after questions answered
       .then(function(answer){
     answer1 = answer.title;
     answer2 = answer.description;
@@ -67,6 +66,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
     answer9 = answer.license;
     link = ``;
     url = ``;
+    // If statement to check value of license
     if (answer.license == `MIT`) {
         link = `https://img.shields.io/badge/License-MIT-yellow`;
         url = `https://opensource.org/licenses/MIT`;
@@ -80,8 +80,9 @@ const questions = [`What is the title of your application?`, `Please provide a d
         link = `https://img.shields.io/badge/License-BSD%203--Clause-orange`;
         url = `https://opensource.org/licenses/BSD-3-Clause`;
     };
+    // Function creating new READMe
       }).then(function(){
-      fs.writeFile(`newREADME.md`, `#<h1>${answer1} <img src="${link}"></h1><br>
+      fs.writeFile(`newREADME.md`, `<h1>${answer1} <img src="${link}"></h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
@@ -105,8 +106,11 @@ const questions = [`What is the title of your application?`, `Please provide a d
       <h2 id="questions">Questions:</h2><br>
       GitHub profile: <a href="https://github.com/${answer7}">${answer7}</a><br>
       Email me at ${answer8}<br>
-      `, function(err){
+      `,
+    //   Function for error
+      function(err){
         if (err) throw err;
     });}).then(function(){
+        // Console log on successful creation
 console.log(`Readme created and saved under newREADME.md`)
     });
