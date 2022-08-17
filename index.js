@@ -107,7 +107,9 @@ const questions = [`What is the title of your application?`, `Please provide a d
       Email me at ${answer8}<br>
       `, function(err){
         if (err) throw err;
-    });});
+    });}).then(function(){
+console.log(`Readme created and saved under newREADME.md`)
+    });
 // TODO: Create a function to initialize app
 function init() {}
 
