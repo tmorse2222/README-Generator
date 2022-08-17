@@ -81,7 +81,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
         url = `https://opensource.org/licenses/BSD-3-Clause`;
     };
       }).then(function(){
-      fs.writeFile(`newREADME.md`, `<h1>${answer1} <img src="${link}"></h1><br>
+      fs.writeFile(`newREADME.md`, `#<h1>${answer1} <img src="${link}"></h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
