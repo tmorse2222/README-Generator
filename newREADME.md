@@ -1,4 +1,4 @@
-<h1>Generator: README</h1><br>
+<h1>Sample Title</h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
@@ -8,8 +8,10 @@
       <a href="#license">License Info</a><br>
       <a href="#questions">Questions</a><br>
       <h2>Description:</h2><br>
-      This application dynamically updates a new README file for any app<br>
+      Sample description<br>
       <h2>Installation:</h2><br>
-      Node.js<br>
+      Sample requirements<br>
       <h2>Usage:</h2><br>
-      Clone repository from github. After cloned, navigate to new repository through command line, initiate the file through node index.js<br>
+      Sample instructions<br>
+      <h2>Contributions:</h2><br>
+      Sample instructions<br>
