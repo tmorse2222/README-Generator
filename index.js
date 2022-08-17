@@ -66,14 +66,19 @@ const questions = [`What is the title of your application?`, `Please provide a d
     answer8 = answer.email;
     answer9 = answer.license;
     link = ``;
+    url = ``;
     if (answer.license == `MIT`) {
-        link = `https://img.shields.io/badge/License-MIT-yellow`
+        link = `https://img.shields.io/badge/License-MIT-yellow`;
+        url = `https://opensource.org/licenses/MIT`;
     } else if (answer.license == `IBM`) {
-        link = `https://img.shields.io/badge/License-IPL%201.0-blue`
+        link = `https://img.shields.io/badge/License-IPL%201.0-blue`;
+        url = `https://opensource.org/licenses/IPL-1.0`;
     } else if (answer.license == `Apache`) {
-        link = `https://img.shields.io/badge/License-Apache%202.0-yellowgreen`
+        link = `https://img.shields.io/badge/License-Apache%202.0-yellowgreen`;
+        url = `https://www.apache.org/licenses/LICENSE-2.0`;
     } else if (answer.license == `BSD 3`) {
-        link = `https://img.shields.io/badge/License-BSD%203--Clause-orange`
+        link = `https://img.shields.io/badge/License-BSD%203--Clause-orange`;
+        url = `https://opensource.org/licenses/BSD-3-Clause`;
     };
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1} <img src="${link}"></h1><br>
@@ -96,7 +101,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
       <h2>Tests:</h2><br>
       ${answer6}<br>
       <h2>License:</h2><br>
-      This application is licensed with ${answer9}.<br>
+      This application is licensed with ${answer9}. A link to the documentation can be found <a href="${url}">here</a><br>
       <h2>Questions:</h2><br>
       GitHub profile: <a href="https://github.com/${answer7}">${answer7}</a><br>
       Email me at ${answer8}<br>
