@@ -76,8 +76,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
         link = `https://img.shields.io/badge/License-BSD%203--Clause-orange`
     };
       }).then(function(){
-      fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
-      <img src="${link}"><br>
+      fs.writeFile(`newREADME.md`, `<h1>${answer1} <img src="${link}"></h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
