@@ -1,4 +1,4 @@
-<h1>Sample title</h1><br>
+<h1>Sample Title</h1><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
@@ -16,7 +16,9 @@
       <h2>Contributions:</h2><br>
       Sample instructions<br>
       <h2>Tests:</h2><br>
-      Sample tests<br>
+      sample tests<br>
+      <h2>License:</h2><br>
+      This application is licensed with Apache.<br>
       <h2>Questions:</h2><br>
       GitHub profile: <a href="https://github.com/tmorse2222">tmorse2222</a><br>
       Email me at tmorse2222@gmail.com<br>

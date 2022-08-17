@@ -4,7 +4,7 @@ const inquirer = require(`inquirer`);
 // TODO: Create an array of questions for user input
 const questions = [`What is the title of your application?`, `Please provide a description of your application`, `Please provide any installation requirements`,
 `How should this app be operated?`, `How would one contribute to this repository/code base?`, `What tests were performed on the app?`, 
-`Please enter your GitHub username`, `Please enter your email`];
+`Please enter your GitHub username`, `Please enter your email`, `Which license would you like to apply to the application?`];
 
 // TODO: Create a function to write README file
 
@@ -48,6 +48,12 @@ const questions = [`What is the title of your application?`, `Please provide a d
         name: `email`,
         message: questions[7],
         type: `input`
+    },
+    {
+        name: `license`,
+        message: questions[8],
+        type: `list`,
+        choices: [`MIT`, `MPL`, `Apache`, `BSD 3`]
     }])
       .then(function(answer){
     answer1 = answer.title;
@@ -58,6 +64,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
     answer6 = answer.tests;
     answer7 = answer.username;
     answer8 = answer.email;
+    answer9 = answer.license;
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
       <h2>Table of Contents:</h2><br>
@@ -78,6 +85,8 @@ const questions = [`What is the title of your application?`, `Please provide a d
       ${answer5}<br>
       <h2>Tests:</h2><br>
       ${answer6}<br>
+      <h2>License:</h2><br>
+      This application is licensed with ${answer9}.<br>
       <h2>Questions:</h2><br>
       GitHub profile: <a href="https://github.com/${answer7}">${answer7}</a><br>
       Email me at ${answer8}<br>
