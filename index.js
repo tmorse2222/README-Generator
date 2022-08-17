@@ -53,7 +53,7 @@ const questions = [`What is the title of your application?`, `Please provide a d
         name: `license`,
         message: questions[8],
         type: `list`,
-        choices: [`MIT`, `MPL`, `Apache`, `BSD 3`]
+        choices: [`MIT`, `IBM`, `Apache`, `BSD 3`]
     }])
       .then(function(answer){
     answer1 = answer.title;
@@ -68,6 +68,9 @@ const questions = [`What is the title of your application?`, `Please provide a d
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
       <img src="https://img.shields.io/badge/License-Apache%202.0-yellowgreen"><br>
+      <img src="https://img.shields.io/badge/License-MIT-yellow"><br>
+      <img src="https://img.shields.io/badge/License-IPL%201.0-blue"><br>
+      <img src="https://img.shields.io/badge/License-BSD%203--Clause-orange"><br>
       <h2>Table of Contents:</h2><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
