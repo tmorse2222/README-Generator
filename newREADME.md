@@ -1,6 +1,6 @@
 <h1></h1><br>
       <h2>Table of Contents:</h2><br>
-      [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]<br>
+      <img href="https://img.shields.io/badge/License-Apache_2.0-blue.svg"><br>
       <a href="#description">Description</a><br>
       <a href="#installation">Installation</a><br>
       <a href="#usage">Usage Instructions</a><br>
