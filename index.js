@@ -90,19 +90,19 @@ const questions = [`What is the title of your application?`, `Please provide a d
       <a href="#tests">Tests</a><br>
       <a href="#license">License Info</a><br>
       <a href="#questions">Questions</a><br>
-      <h2>Description:</h2><br>
+      <h2 id="description">Description:</h2><br>
       ${answer2}<br>
-      <h2>Installation:</h2><br>
+      <h2 id="installation">Installation:</h2><br>
       ${answer3}<br>
-      <h2>Usage:</h2><br>
+      <h2 id="usage">Usage:</h2><br>
       ${answer4}<br>
-      <h2>Contributions:</h2><br>
+      <h2 id="contribute">Contributions:</h2><br>
       ${answer5}<br>
-      <h2>Tests:</h2><br>
+      <h2 id="tests">Tests:</h2><br>
       ${answer6}<br>
-      <h2>License:</h2><br>
+      <h2 id="license">License:</h2><br>
       This application is licensed with ${answer9}. A link to the documentation can be found <a href="${url}">here</a><br>
-      <h2>Questions:</h2><br>
+      <h2 id="questions">Questions:</h2><br>
       GitHub profile: <a href="https://github.com/${answer7}">${answer7}</a><br>
       Email me at ${answer8}<br>
       `, function(err){
