@@ -2,7 +2,8 @@
 const fs = require(`fs`);
 const inquirer = require(`inquirer`);
 // TODO: Create an array of questions for user input
-const questions = [`What is the title of your application?`, `Please provide a description of your application`];
+const questions = [`What is the title of your application?`, `Please provide a description of your application`, `Please provide any installation requirements`,
+];
 
 // TODO: Create a function to write README file
 
@@ -12,14 +13,20 @@ const questions = [`What is the title of your application?`, `Please provide a d
     message: `${questions[0]}`,
     type: 'input'
        },
+       {
+           name: `description`,
+           message: `${questions[1]}`,
+           type: `input`
+       },
     {
-        name: `description`,
-        message: `${questions[1]}`,
+        name: `installation`,
+        message: `${questions[2]}`,
         type: `input`
     }])
       .then(function(answer){
     answer1 = answer.title;
     answer2 = answer.description;
+    answer3 = answer.installation;
       }).then(function(){
       fs.writeFile(`newREADME.md`, `<h1>${answer1}</h1><br>
       <h2>Table of Contents:</h2><br>
@@ -31,7 +38,9 @@ const questions = [`What is the title of your application?`, `Please provide a d
       <a href="#license">License Info</a><br>
       <a href="#questions">Questions</a><br>
       <h2>Description:</h2><br>
-      ${answer2}<br>`, function(err){
+      ${answer2}<br>
+      <h2>Installation</h2><br>
+      ${answer3}<br>`, function(err){
         if (err) throw err;
     });});
 // TODO: Create a function to initialize app
